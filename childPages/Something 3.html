@@ -1,100 +1,200 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <!DOCTYPE html>
 
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
-  padding: 25px;
-  background-color: white;
-  color: black;
-  font-size: 25px;
-}
-
-.dark-mode {
-  background-color: #111;
-  color: white;
+  background-color: black;
 }
 </style>
 </head>
 <body>
 
-<button onclick="myFunction()">Light/Dark Mode</button>
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
+<html>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+
+/* Change how much space the section takes up */
+body, html {
+  height: 110%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Styling the Tab Links at Top */
+.tablink {
+  background-color: #222;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 25px;
+  width: 35.75%;
+}
+
+.tablink:hover {
+  background-color: #222;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: gray;
+  display: none;
+  padding: 100px 20px;
+  height: 110%;
+}
+
+#Home {background-color: #353d41;}
+#News {background-color:#353d41;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, '#2f4f4f')">BATTLEFRONT II</button>
+<button class="tablink" onclick="openPage('News', this, '#2f4f4f')" id="defaultOpen">YTTD</button>
+
+
+<div id="Home" class="tabcontent">
+  <h2>BATTLEFRONT II</h2>
+  <p>Is a Game About...</p>
 
 
 
-  <style>
-      div {border: thin dotted red;}
-      * { box-sizing: border-box;}
-      .h1 {
-        border: 1px solid red;
-        padding: 30px;
-        width: 50%;
-        background-color: #;
-        opacity: 90%;
+ <html>
+<head>
+<style>
 
-      }
 
-    </style>
+.div2 {
+  width: 860px;
+  height: 100px;
+  padding: 0px;
+  border: 1px solid red;
+  font-size: 130%;
+  font-family: "Times New Roman", Times, serif;
 
-  <br><br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br>
+}
+</style>
+</head>
+<body>
 
-          <h1 class ="h1"> <center> BATTLEFRONT II </center> </h1>
-
-         </html>
-
-  <head>
-   <body>
-      <div style = "position:relative; left:5px; bottom:-100px; background-color: #;">
-        <p>  Battlefront II Is a game established and Developed by several platforms. It's options range from Multiplayer, to Single Player - 				with a wide variety of worlds to battle on. This comes under the option called "Instant Action." Either Land Battles, or Space 					Battles can be played, including during what time the game would take course during "Star Wars" in General.
+<br>
+<div class="div2">   <p>  Battlefront II Is a game established and Developed by several platforms. It's options range from Multiplayer, to Single Player - 				with a wide variety of worlds to battle on. This comes under the option called "Instant Action." Either Land Battles, or Space 					Battles can be played, including during what time the game would take course during "Star Wars" in General.
         <br><br><br>
        	I find it a fun game to indulge in, with Action and several choices to pick from. I have both versions of the game BattleFront II. There is the slightly older one, and the most recent one, which can be seen in the picture of the header. The newest version does have better graphics, including a developed story-mode which you can play. The slightly older one however, is more focused on fighting in different places, capturing things called "Command Posts" etc.
         <br><br><br>
-       	On The Right you can see a video of the original BattleFront II gameplay - which I am actually playing in it.
-        </p>
+       	On The Right you can see a video of the original BattleFront II gameplay - which I am actually playing in it.</div>
 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div id="News" class="tabcontent">
+
+    <h2>YOUR TURN TO DIE</h2>
+  <p>Is a Game About...</p>
+
+
+
+ <html>
+<head>
+<style>
+
+
+.div2 {
+  width: 860px;
+  height: 100px;
+  padding: 0px;
+  border: 1px solid red;
+  font-size: 130%;
+  font-family: "Times New Roman", Times, serif;
+
+}
+</style>
+</head>
+<body>
+
+<br>
+<div class="div2">   <p>  YTTD - Short for "Your Turn to Die" is a Japanese Horror/Adventure game in which you are put into a Death game where votes are by Majority.
+<br><br><br><br><br>
+
+I find this game interesting because of the plot/twists, identity's of characters and how you're able to interact with the characters your own way. It also makes you think about how your actions can impact someone elses's.</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+//*Clicking with a function */
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
+
+<br>
       </div>
    </body>
 </head>
-
-  <style>
-      div {border: thin dotted red;}
-      * { box-sizing: border-box;}
-      .h1 {
-        border: 1px solid red;
-        padding: 30px;
-        width: 50%;
-        background-color: #;
-        opacity: 90%;
-
-      }
-
-    </style>
-    <br><br><br><br>
-
-  <h1 class ="h1"> <center> YTTD </center> </h1>
-
-  <div style = "position:relative; left:5px; bottom:-100px; background-color: #;">
-        <p>
-
-      YTTD - Short for "Your Turn to Die" is a Japanese Horror/Adventure game in which you are put into a Death game where votes are by Majority.
-        <br><br><br>
-       I find this game interesting because of the plot/twists, identity's of characters and how you're able to interact with 	the characters your own way. It also makes you think about how your actions can impact someone elses's.
-
-        </p>
-
-      </div>
-   </body>
-</head>
-
-
-
-
-
-
-
 
 
 
@@ -106,17 +206,6 @@ div {
 }
 </style>
 </head>
-
-
-
-<script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
-
-
 
 
 <html>
@@ -134,7 +223,6 @@ body {
 <html>
 <head>
 <style>
-
 body {
   background-image: url("https://i.postimg.cc/CxspSGYf/bebe-keeps-complainin.png");
   background-repeat: no-repeat;
